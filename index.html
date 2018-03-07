@@ -2,10 +2,12 @@
 <html >
 <head>
   <meta charset="UTF-8">
-  <title>News Cards - CSS only</title>
+  <title>Clash of Clans Cards</title>
   
-  
-  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+  <link rel='stylesheet prefetch' href='https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css'>
+<link rel='stylesheet prefetch' href='https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css'>
 
       <link rel="stylesheet" href="css/style.css">
 
@@ -13,60 +15,173 @@
 </head>
 
 <body>
-  <div class="row">
-  <div class="example-1 card">
-    <div class="wrapper">
-      <div class="date">
-        <span class="day">12</span>
-        <span class="month">Aug</span>
-        <span class="year">2016</span>
-      </div>
-      <div class="data">
-        <div class="content">
-          <span class="author">Jane Doe</span>
-          <h1 class="title"><a href="#">Everything You Need to Know About Gold Medals</a></h1>
-          <p class="text">Olympic gold medals contain only about 1.34 percent gold, with the rest composed of sterling silver.</p>
-          <label for="show-menu" class="menu-button"><span></span></label>
-        </div>
-        <input type="checkbox" id="show-menu" />
-        <ul class="menu-content">
-          <li>
-            <a href="#" class="fa fa-bookmark-o"></a>
-          </li>
-          <li><a href="#" class="fa fa-heart-o"><span>47</span></a></li>
-          <li><a href="#" class="fa fa-comment-o"><span>8</span></a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="example-2 card">
-    <div class="wrapper">
-      <div class="header">
-        <div class="date">
-          <span class="day">12</span>
-          <span class="month">Aug</span>
-          <span class="year">2016</span>
-        </div>
-        <ul class="menu-content">
-          <li>
-            <a href="#" class="fa fa-bookmark-o"></a>
-          </li>
-          <li><a href="#" class="fa fa-heart-o"><span>18</span></a></li>
-          <li><a href="#" class="fa fa-comment-o"><span>3</span></a></li>
-        </ul>
-      </div>
-      <div class="data">
-        <div class="content">
-          <span class="author">Jane Doe</span>
-          <h1 class="title"><a href="#">Stranger Things: The sound of the Upside Down</a></h1>
-          <p class="text">The antsy bingers of Netflix will eagerly anticipate the digital release of the Survive soundtrack, out today.</p>
-          <a href="#" class="button">Read more</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+  <div class="slide-container">
   
+  <div class="wrapper">
+    <div class="clash-card barbarian">
+      <div class="clash-card__image clash-card__image--barbarian">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/barbarian.png" alt="barbarian" />
+      </div>
+      <div class="clash-card__level clash-card__level--barbarian">Level 4</div>
+      <div class="clash-card__unit-name">The Barbarian</div>
+      <div class="clash-card__unit-description">
+        The Barbarian is a kilt-clad Scottish warrior with an angry, battle-ready expression, hungry for destruction. He has Killer yellow horseshoe mustache.
+      </div>
+
+      <div class="clash-card__unit-stats clash-card__unit-stats--barbarian clearfix">
+        <div class="one-third">
+          <div class="stat">20<sup>S</sup></div>
+          <div class="stat-value">Training</div>
+        </div>
+
+        <div class="one-third">
+          <div class="stat">16</div>
+          <div class="stat-value">Speed</div>
+        </div>
+
+        <div class="one-third no-border">
+          <div class="stat">150</div>
+          <div class="stat-value">Cost</div>
+        </div>
+
+      </div>
+
+    </div> <!-- end clash-card barbarian-->
+  </div> <!-- end wrapper -->
   
+  <div class="wrapper">
+    <div class="clash-card archer">
+      <div class="clash-card__image clash-card__image--archer">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/archer.png" alt="archer" />
+      </div>
+      <div class="clash-card__level clash-card__level--archer">Level 5</div>
+      <div class="clash-card__unit-name">The Archer</div>
+      <div class="clash-card__unit-description">
+        The Archer is a female warrior with sharp eyes. She wears a short, light green dress, a hooded cape, a leather belt and an attached small pouch.
+      </div>
+
+      <div class="clash-card__unit-stats clash-card__unit-stats--archer clearfix">
+        <div class="one-third">
+          <div class="stat">25<sup>S</sup></div>
+          <div class="stat-value">Training</div>
+        </div>
+
+        <div class="one-third">
+          <div class="stat">24</div>
+          <div class="stat-value">Speed</div>
+        </div>
+
+        <div class="one-third no-border">
+          <div class="stat">300</div>
+          <div class="stat-value">Cost</div>
+        </div>
+
+      </div>
+
+    </div> <!-- end clash-card archer-->
+  </div> <!-- end wrapper -->
+  
+  <div class="wrapper">
+    <div class="clash-card giant">
+      <div class="clash-card__image clash-card__image--giant">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/giant.png" alt="giant" />
+      </div>
+      <div class="clash-card__level clash-card__level--giant">Level 5</div>
+      <div class="clash-card__unit-name">The Giant</div>
+      <div class="clash-card__unit-description">
+        Slow, steady and powerful, Giants are massive warriors that soak up huge amounts of damage. Show them a turret or cannon and you'll see their fury unleashed!
+      </div>
+
+      <div class="clash-card__unit-stats clash-card__unit-stats--giant clearfix">
+        <div class="one-third">
+          <div class="stat">2<sup>M</sup></div>
+          <div class="stat-value">Training</div>
+        </div>
+
+        <div class="one-third">
+          <div class="stat">12</div>
+          <div class="stat-value">Speed</div>
+        </div>
+
+        <div class="one-third no-border">
+          <div class="stat">2250</div>
+          <div class="stat-value">Cost</div>
+        </div>
+
+      </div>
+
+    </div> <!-- end clash-card giant-->
+  </div> <!-- end wrapper -->
+  
+   <div class="wrapper">
+    <div class="clash-card goblin">
+      <div class="clash-card__image clash-card__image--goblin">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/goblin.png" alt="goblin" />
+      </div>
+      <div class="clash-card__level clash-card__level--goblin">Level 5</div>
+      <div class="clash-card__unit-name">The Goblin</div>
+      <div class="clash-card__unit-description">
+        These pesky little creatures only have eyes for one thing: LOOT! They are faster than a Spring Trap, and their hunger for resources is limitless.
+      </div>
+
+      <div class="clash-card__unit-stats clash-card__unit-stats--goblin clearfix">
+        <div class="one-third">
+          <div class="stat">30<sup>S</sup></div>
+          <div class="stat-value">Training</div>
+        </div>
+
+        <div class="one-third">
+          <div class="stat">32</div>
+          <div class="stat-value">Speed</div>
+        </div>
+
+        <div class="one-third no-border">
+          <div class="stat">100</div>
+          <div class="stat-value">Cost</div>
+        </div>
+
+      </div>
+
+    </div> <!-- end clash-card goblin-->
+  </div> <!-- end wrapper -->
+  
+  <div class="wrapper">
+    <div class="clash-card wizard">
+      <div class="clash-card__image clash-card__image--wizard">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/wizard.png" alt="wizard" />
+      </div>
+      <div class="clash-card__level clash-card__level--wizard">Level 6</div>
+      <div class="clash-card__unit-name">The Wizard</div>
+      <div class="clash-card__unit-description">
+        The Wizard is a terrifying presence on the battlefield. Pair him up with some of his fellows and cast concentrated blasts of destruction on anything, land or sky!
+      </div>
+
+      <div class="clash-card__unit-stats clash-card__unit-stats--wizard clearfix">
+        <div class="one-third">
+          <div class="stat">5<sup>M</sup></div>
+          <div class="stat-value">Training</div>
+        </div>
+
+        <div class="one-third">
+          <div class="stat">16</div>
+          <div class="stat-value">Speed</div>
+        </div>
+
+        <div class="one-third no-border">
+          <div class="stat">4000</div>
+          <div class="stat-value">Cost</div>
+        </div>
+
+      </div>
+
+    </div> <!-- end clash-card wizard-->
+  </div> <!-- end wrapper -->
+  
+</div> <!-- end container -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+<script src='https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js'></script>
+
+    <script src="js/index.js"></script>
+
 </body>
 </html>

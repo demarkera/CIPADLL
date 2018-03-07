@@ -1,3 +1,3 @@
-A Pen created at CodePen.io. You can find this one at http://codepen.io/mauriceconchis/pen/YWBxAg.
+A Pen created at CodePen.io. You can find this one at http://codepen.io/drehimself/pen/QNXpyp.
 
- Pure CSS news cards with revealing content on hover. Please feel free to drop a comment with some suggestion for improvement. 
+ Based on this dribbble shot: https://dribbble.com/shots/2432743-Clash-Cards-Preview
