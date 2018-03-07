@@ -1,2 +1,0 @@
-# CIPADLL
-Campanha da CIPA
